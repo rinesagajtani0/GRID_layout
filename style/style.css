@@ -40,6 +40,11 @@ body {
 
 .intro {
   margin-bottom: 96px;
+  display: grid;
+  grid-template-columns: 2fr 1fr; 
+  align-items: start;
+  margin-bottom: 48px;
+  column-gap: 32px;
 }
 
 .small-link {
@@ -67,4 +72,16 @@ body {
   border-top: 1px solid #ddd;
   width: 207px;
   padding-top: 9px;
+}
+
+.gallery {
+  column-count: 3; 
+  column-gap: 8px;
+}
+
+.gallery img {
+  width: 100%;
+  margin-bottom: 9px; 
+  display: block;
+  break-inside: avoid;
 }
